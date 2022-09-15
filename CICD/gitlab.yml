@@ -1,0 +1,37 @@
+stages:
+  - build
+  - codestyle
+  - test
+  - deploy
+  
+build-cat-grep:
+  stage: build
+  script:
+    - cd src/CICD/
+    - ./build.sh
+  artifacts:
+    paths:
+      - src/cat/
+      - src/grep/
+    expire_in: 30 days
+
+cpplint:
+  stage: codestyle
+  script:
+    - cd src/CICD/
+    - ./codestyle.sh
+
+test-cat-grep:
+  stage: test
+  script:
+    - cd src/CICD/
+    - ./test.sh
+
+deploy_to_second_vm:
+  stage: deploy
+  needs: ["test-cat-grep"]
+  allow_failure: false
+  script:
+    - src/CICD/deploy.sh
+  when: manual
+
