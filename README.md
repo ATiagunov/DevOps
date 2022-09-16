@@ -9,7 +9,9 @@
 
 ## Linux setup
 <p>I imported ubuntu server 20.04 from vdi in Virtual Box, set up the system(user, network, time service, sshd), practiced with text editors(vi, nano, mcedit), monitoring utils(fdisk, df, du, ncdu,  ps, top, htop) and cron.</p>
-All parts are described in detail: [linux.md](Linux%20setup/linux.md)
+All parts are described in detail: https://github.com/ATiagunov/DevOps/blob/79a545f74e5ab2e5471fc6866701300efd65474c/Linux%20setup/linux.md
+
+
 
   
 
