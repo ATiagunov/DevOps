@@ -30,11 +30,11 @@ All parts are described in detail: https://github.com/ATiagunov/DevOps/blob/79a5
 Gitlab-runner is installed on ubuntu server and linked with the repository
 ### 2. Building
 All stages are tested on my cat/grep project, where I implemented these utils in C.
-I copied source files to the gitlab repository and created a stage to build an application with saving artifacts with a 30-day retention period.
+I copied source files to the gitlab repository and created a stage to build an application with saving artifacts for 30 days.
 ### 3. Testing
 Then I added stages to run codestyle and integration tests.
 ### 4. Deployment
-The deployment on another ubuntu virtual machine is done via scp and script that extracts archive to protected directory.
-The approach is unsafe due to open ssh connection as root on deployment machine and copied ssh-id
+The deployment on another ubuntu virtual machine is done via scp and script that extracts archive to protected directory on remote machine.
+The approach is unsafe due to open ssh connection as root on deployment machine and copied ssh-id.
 ### 6. Telegram bot notifier
 I created telegram bot that notifies me about pipeline results.
