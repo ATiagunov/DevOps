@@ -8,14 +8,18 @@
 
 
 ## Linux setup
-<p>This is an introduction to Virtual Machines with Oracle VB. As of today, I have experience with VMWare and Proxmox.
+
+<p>This is an introduction to Virtual Machines with Oracle VB.
 Here I imported ubuntu server 20.04 from vdi in Virtual Box, set up the system(user, network, time service, sshd), practiced with text editors(vi, nano, mcedit), monitoring utils(fdisk, df, du, ncdu,  ps, top, htop) and cron.</p>
-All parts are described in detail: https://github.com/ATiagunov/DevOps/blob/79a545f74e5ab2e5471fc6866701300efd65474c/Linux%20setup/linux.md
+
+[Full description](Linux%20setup/linux.md)
 
 
 ## Networking
-<p>In this project I learned basic networking concepts and build static network according to scheme:
-  ![screen](Networking/screens/5.0.png)</p>
+
+<p>In this project I learned basic networking concepts and build static network according to scheme:<p>
+
+[Full description](Networking/net.md)
 
 
 ## Monitoring 1
